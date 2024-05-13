@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Alert to Mobile Number</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('msg5f.jpg'); /* Replace 'background.jpg' with your image file */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        header {
+            background-color:#3ca18d;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color:#3ca18d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        input[type="text"], input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function sendAlert() {
+            var mobileNumber = document.getElementById("mobileNumber").value;
+           var message = "This is an alert message sent to number: " + mobileNumber;
+            alert(message);
+        }
+    </script>
+</head>
+<body>
+  <header>
+    <h1>Send Alert to Mobile Number</h1>
+</header>
+<form>
+  <label for="mobileNumber">Enter your mobile number:</label><br><br>
+  <input type="text" id="mobileNumber" name="mobileNumber"><br><br><br>
+  <label>Enter you message:</label><br><br>
+  <textarea>I am in danger.Please help me.</textarea><br><br>
+  <input type="button" value="Send Alert" onclick="sendAlert()">
+</form>
+
+<footer>
+    <p>&copy; 2024 V-WOMEN. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+

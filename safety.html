@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Safety Tips</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            background-image: url('pinky2.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+          background-size: cover;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            background-image: url('pink-overlay.jpeg');
+            background-attachment: fixed;  
+          background-size: cover;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .tip {
+            margin-bottom: 20px;
+            border-left: 5px solid #FF1493; /* Pink border */
+            padding-left: 15px;
+        }
+        .tip h2 {
+            color: #333;
+            font-size: 20px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .tip p {
+            color: #514848;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Women's Safety Tips</h1>
+        <div class="tip">
+            <h2>Stay aware of your surroundings</h2>
+            <p>Always be conscious of your environment, especially when alone or in unfamiliar places.</p>
+        </div>
+        <div class="tip">
+            <h2>Trust your instincts</h2>
+            <p>If something feels wrong or uncomfortable, trust your gut and take action to ensure your safety.</p>
+        </div>
+        <div class="tip">
+            <h2>Keep emergency contacts handy</h2>
+            <p>Have important contacts like family, friends, and emergency services programmed into your phone.</p>
+        </div>
+        <div class="tip">
+            <h2>Learn self-defense techniques</h2>
+            <p>Consider taking self-defense classes to empower yourself with the skills to protect against potential threats.</p>
+        </div>
+        <div class="tip">
+            <h2>Stay in well-lit areas</h2>
+            <p>When walking alone, especially at night, stick to well-lit paths and avoid dark or secluded areas.</p>
+        </div>
+        <div class="tip">
+            <h2>Be cautious with social media</h2>
+            <p>Avoid sharing your exact location or personal details publicly on social media platforms, as this information can be used by potential predators.</p>
+        </div>
+        <div class="tip">
+            <h2>Buddy system</h2>
+            <p>Whenever possible, travel with a trusted friend or family member, especially in unfamiliar or potentially risky situations.</p>
+        </div>
+        <div class="tip">
+            <h2>Secure your belongings</h2>
+            <p>Keep your purse, phone, and other valuables close to you and securely fastened to prevent theft or pickpocketing.</p>
+        </div>
+        <div class="tip">
+            <h2>Know your route </h2>
+            <p> Plan your travel routes in advance, especially when using public transportation or walking in unfamiliar areas. Stay aware of any potential dangers along the way.</p>
+        </div>
+        <div class="tip">
+            <h2>Practice assertiveness</h2>
+            <p> Be assertive in setting boundaries and saying no to unwanted advances or requests. Don't hesitate to speak up for yourself and assert your rights.</p>
+        </div>
+        <div class="tip">
+            <h2>Stay sober</h2>
+            <p>Avoid excessive alcohol consumption, as it can impair your judgment and make you more vulnerable to dangers such as assault or accidents.</p>
+        </div>
+        <div class="tip">
+            <h2>Know emergency numbers</h2>
+            <p>Memorize or save important emergency numbers, including local law enforcement, ambulance services, and trusted contacts.</p>
+        </div>
+        <div class="tip">
+            <h2>Be prepared</h2>
+            <p>Carry essential items such as a fully charged phone, personal alarm, or pepper spray for added safety and peace of mind.</p>
+        </div>
+        <div class="tip">
+            <h2>Fire alarm</h2>
+            <p>In any emergency situations all can use this alarm sound which helps you to escape and be safe<br>
+            click on this sos button for siren sound and click stop when you don't want</p>
+        </div>
+        <button id="alarmButton" onclick="playFireAlarmSound()">
+            <img src="sos.jpeg" alt="Alarm Icon" width="100" height="100">
+        </button>  
+        <button id="alarmButton" onclick="stopFireAlarmSound() ">
+            <img src="stop.jpeg" alt="Alarm Icon" width="50" height="50">
+        </button> 
+        <audio id="fireAlarmSound">
+            <source src="siren.mp3.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    <script>
+            function playFireAlarmSound() {
+                var audio = document.getElementById("fireAlarmSound");
+                audio.play();
+            }
+           
+           
+            function stopFireAlarmSound() {
+            var audio = document.getElementById("fireAlarmSound");
+            audio.pause();
+            audio.currentTime = 0; // Reset the audio to the beginning
+        }
+            </script>
+    </div>
+</body>
+</html>
